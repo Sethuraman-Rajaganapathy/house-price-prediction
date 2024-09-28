@@ -118,12 +118,16 @@ R-squared (R²): [Insert Value]
 These results demonstrate the model's capability to predict house prices accurately based on the selected features.
 
 Contributing
+
 Contributions are welcome! If you'd like to improve this project, feel free to:
 
 Fork the repository.
+
 Create a new branch: git checkout -b feature-branch.
+
 Commit your changes: git commit -m 'Add some feature'.
+
 Push to the branch: git push origin feature-branch.
+
 Open a Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
