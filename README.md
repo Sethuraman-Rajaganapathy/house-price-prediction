@@ -129,7 +129,7 @@ Once the app is running, you can interact with it as follows:
 
 ```bash
 The predicted house price is: $450,000
-
+```
 ## Contributing
 
 Contributions are welcome! If you'd like to improve this project, feel free to:
