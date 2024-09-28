@@ -50,6 +50,82 @@ The target variable is the **house price**, which is predicted based on the afor
 ## Installation
 
 1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/house_price_prediction.git
-   cd house_price_prediction
+
+    ```bash
+    git clone https://github.com/yourusername/house_price_prediction.git
+    cd house_price_prediction
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run the Streamlit application:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+4. Access the app at [http://localhost:8501](http://localhost:8501) in your browser.
+
+## Modeling Techniques
+
+The following regression techniques were used in this project:
+
+- **Linear Regression**
+- **Stochastic Gradient Descent (SGD) Regressor**
+- **Ridge Regression** (with GridSearchCV for hyperparameter tuning)
+- **Lasso Regression** (with GridSearchCV for hyperparameter tuning)
+- **Elastic Net Regression** (with GridSearchCV for hyperparameter tuning)
+
+The models were evaluated based on the following metrics:
+
+- **Mean Absolute Percentage Error (MAPE)**
+- **Root Mean Squared Error (RMSE)**
+- **R-squared (R²)**
+- **Adjusted R-squared**
+
+## Model Evaluation
+
+The best model was selected based on the lowest **MAPE**. The following models were tested, and their performance was recorded in a scorecard for comparison:
+
+- **Linear Regression**
+- **SGD Regressor**
+- **Ridge Regression (GridSearchCV)**
+- **Lasso Regression (GridSearchCV)**
+- **Elastic Net Regression (GridSearchCV)**
+
+The model with the lowest MAPE was saved using Python's `pickle` module for deployment.
+
+## Web App Interface
+
+The project includes a user-friendly web interface powered by **Streamlit**, allowing users to input house features (e.g., number of bedrooms, bathrooms, built year, etc.) and get a price prediction in real-time.
+
+### Features:
+
+- Sidebar input sliders for numeric and categorical data
+- Dynamic input widgets based on the data type of each feature
+- Real-time prediction displayed upon user input
+
+## Usage
+
+Once the app is running, you can interact with it as follows:
+
+1. Adjust the input sliders and dropdowns on the sidebar to specify house features.
+2. Click the "Predict House Price" button to get the predicted price based on the selected inputs.
+3. The app will display the predicted house price in real-time.
+
+### Example Input
+
+- Bedrooms: 3
+- Bathrooms: 2.5
+- Year Built: 1995
+- Condition: Excellent
+- House Grade: 8
+
+### Example Output
+
+```bash
+The predicted house price is: $450,000
