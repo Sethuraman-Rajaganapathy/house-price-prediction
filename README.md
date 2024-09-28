@@ -129,3 +129,28 @@ Once the app is running, you can interact with it as follows:
 
 ```bash
 The predicted house price is: $450,000
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve this project, feel free to:
+
+1. Fork the repository.
+2. Create a new branch: 
+
+    ```bash
+    git checkout -b feature-branch
+    ```
+
+3. Commit your changes: 
+
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+
+4. Push to the branch: 
+
+    ```bash
+    git push origin feature-branch
+    ```
+
+5. Open a Pull Request.
