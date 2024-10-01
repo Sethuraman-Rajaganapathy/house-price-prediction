@@ -13,7 +13,7 @@ This repository contains a machine learning project to predict house prices usin
 7. [Usage](#usage)
 8. [Results](#results)
 9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ## Overview
 
